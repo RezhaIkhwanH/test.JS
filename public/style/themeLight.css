@@ -1,0 +1,204 @@
+:root {
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+.navigation {
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+
+
+}
+
+
+.navigation ul li:hover,
+.navigation ul li.hovered {
+    background: var(--white);
+}
+
+.navigation ul li a {
+    color: var(--white);
+
+}
+
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
+    color: var(--blue);
+}
+
+
+/* curve outside */
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+
+    background: transparent;
+    box-shadow: 35px 35px 0 10px var(--white);
+
+}
+
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+    box-shadow: 35px -35px 0 10px var(--white);
+
+}
+
+/* theme button */
+.navigation ul lo a .icon .title ion-icon[name="sunny-outline"] {
+    opacity: 1;
+}
+
+.navigation ul lo a .icon .title ion-icon[name="moon-outline"] {
+    opacity: 0;
+}
+
+/* main */
+
+.main {
+    background: var(--white);
+}
+
+.main .topbar .search label input {
+    border: 1px solid var(--black2);
+}
+
+.main .topbar .toggle {
+    color: #000;
+}
+
+.main .topbar .user {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* card */
+.cardBox .card {
+    background-color: var(--white);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.cardBox .card .numbers {
+
+    color: var(--blue);
+}
+
+.cardBox .card .cardName {
+    color: var(--black2);
+
+}
+
+.cardBox .card .iconBx {
+    font-size: 3.5em;
+    color: var(--black2);
+
+}
+
+.cardBox .card:hover {
+    background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+    color: var(--white);
+}
+
+/* grafik */
+.grapBox .box {
+    background-color: #fff;
+    box-shadow: 7px 7px 25px rgba(0, 0, 0, .2);
+
+}
+
+
+/* order */
+
+.details .RencentOrder {
+    background-color: var(--white);
+    box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.2);
+
+}
+
+.details .RencentOrder .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details .RencentOrder .cardHeader h2 {
+    color: var(--blue);
+}
+
+.details .RencentOrder .cardHeader .btn {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.details .RencentOrder table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+.details .RencentOrder table tbody tr:hover {
+    background-color: var(--blue);
+    color: var(--white);
+
+}
+
+
+.details .RencentOrder table tbody tr td .status.deliverd {
+    background-color: #8de02c;
+    color: var(--white);
+
+}
+
+.details .RencentOrder table tbody tr td .status.inOrder {
+    background-color: #ffd51a;
+    color: var(--white);
+
+}
+
+/* customers */
+.details .RencentCustomers {
+    background-color: var(--white);
+    box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.2);
+
+}
+
+.details .RencentCustomers .cardHeader h2 {
+    color: var(--blue);
+}
+
+
+
+
+
+.details .RencentCustomers table tr td h4 span {
+    color: var(--black2);
+}
+
+/* .details .RencentCustomers table tr:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.details .RencentCustomers table tr:hover td h4 span {
+    color: var(--white);
+} */
+
+/* responsive  */
+
+@media (max-width:480px) {
+
+    .main.active .topbar .toggle {
+        color: #fff;
+    }
+
+}
